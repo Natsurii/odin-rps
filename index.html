@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="game.js"></script>
+
     <title>Janken Game</title>
 </head>
 <body>
+    
     <header>
         <h1>Janken! [WIP]</h1>
         <h3 id="score-text">Score: </h3>
@@ -17,24 +18,25 @@
     <div class="game">
         <div class="user">
             <h3>You</h3>
-            <img src="rps/question-mark_toss.png">
+            <img id="playerImage" src="rps/question-mark_toss.png">
         </div>
-        <div class="computer">
+        <div class="computer"> 
             <h3>Machine</h3>
-            <img src="rps/question-mark_toss.png">
+            <img id ="machineImage" src="rps/question-mark_toss.png">
         </div>
     </div>
 
     <div class="choices">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
     </div>
 
     <div class="menu">
-        <h3>Create new game</h3>
-        <button>New Game</button>
+        <h3 id="menu-text"></h3>
+        <button id="newgame">Reset</button>
     </div>
-
+    <script src="game.js"></script>
 </body>
+
 </html>
